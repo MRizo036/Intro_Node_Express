@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+        title= title
+body
+    p= main
+
+    nav
+        ul
+            li
+              a(href="pageOne.pug") Films
+            li 
+              a(href="pageTwo.pug") People
+
+            li
+              a(href="pageThree.pug") Locations
+            li
+              a(href="pageFour.pug") Species
+            li
+              a(href="pageFive.pug") Vehicles
+    p= data.title
+    p= data.description
+    p= data.director
+    p= data.producer
+    p= data.release_date
+    p= data.rt_score

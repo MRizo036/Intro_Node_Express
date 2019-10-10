@@ -293,7 +293,7 @@ fs.writeFile('data2.json', JSON.stringify(jsonString), function(err) {
 1.	Install ExpressJS with NPM, both globally and locally. Notice the –save parameter on the local installation, which puts express as a dependency in your package.json file:
 
   ```js
-    npm install express –g
+     
     npm install express –save
   ```
 
