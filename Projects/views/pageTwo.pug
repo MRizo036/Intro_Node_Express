@@ -3,17 +3,27 @@ html
     head
         title= title
 body
-    p= main
 
     nav
         ul
-            li
-              a(href="pageOne.pug") Films
             li 
-              a(href="pageTwo.pug") People
+              a(href="/") Films
             li
-              a(href="pageThree.pug") Locations
+              a(href="/pageOne") People
+            li 
+              a(href="/pageTwo") Locations
             li
-              a(href="pageFour.pug") Species
+              a(href="/pageThree") Species
             li
-              a(href="pageFive.pug") Vehicles
+              a(href="/pageFour") Vehicles
+    h1(style="text-align:center;")= "Locations"
+    hr
+    h2= data.name
+    p= "Climate: "+ data.climate
+    p= "Terrain: " +data.terrain
+    p= "Surface Water: "+data.surface_water
+    hr
+    h2= data.name2
+    p= "Climate: "+ data.climate2
+    p= "Terrain: " +data.terrain2
+    p= "Surface Water: "+data.surface_water2

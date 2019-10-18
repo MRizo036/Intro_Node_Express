@@ -2,18 +2,30 @@ doctype html
 html
     head
         title= title
+        script(src='/app.js')
+        link(rel="stylesheet", href="/Projects/public/main.css")
 body
-    p= main
 
     nav
         ul
-            li
-              a(href="pageOne.pug") Films
             li 
-              a(href="pageTwo.pug") People
+              a(href="/") Films
             li
-              a(href="pageThree.pug") Locations
+              a(href="/pageOne") People
+            li 
+              a(href="/pageTwo") Locations
             li
-              a(href="pageFour.pug") Species
+              a(href="/pageThree") Species
             li
-              a(href="pageFive.pug") Vehicles
+              a(href="/pageFour") Vehicles
+
+    h1(style="text-align:center;")= "Vehicles"
+    each val in vehicles
+      hr
+      h2= val.name
+      p= "Description: "+ val.description
+      p= "Vehicle Class: "+ val.vehicle_class
+      p= "Length: "+ val.length
+
+      //- button(class='button'  onclick='getPilot('+val.pilot+')') Google
+      

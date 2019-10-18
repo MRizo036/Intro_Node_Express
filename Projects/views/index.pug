@@ -5,20 +5,28 @@ html
 body
     nav
         ul
-            li
-                a(href="pageOne.html") Films
             li 
-                a(href="pageTwo.html") People
+              a(href="/") Films
             li
-                 a(href="pageThree.html") Locations
+              a(href="/pageOne") People
+            li 
+              a(href="/pageTwo") Locations
             li
-                a(href="pageFour.html") Species
+              a(href="/pageThree") Species
             li
-                 a(href="pageFive.html") Vehicles
-    p= data.title
-    p= data.description
-    p= data.director
-    p= data.producer
-    p= data.release_date
-    p= data.rt_score
-    
+              a(href="/pageFour") Vehicles
+    h1(style="text-align:center;")= "Films"
+    hr
+    h2=  data.title
+    p= "Description: " +data.description
+    h4= "Director: "+ data.director
+    p= "Producer: " +data.produce
+    p= "Release Date: "+data.release_date
+    p= "RT Score: "+ data.rt_score
+    hr
+    h2= data.title2
+    p= "Description: " +data.description2
+    h4= "Director: "+data.director2
+    p= "Producer: " +data.produce2
+    p= "Release Date: "+data.release_date2
+    p= "RT Score: "+ data.rt_score2
